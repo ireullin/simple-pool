@@ -30,6 +30,7 @@ class SimplePool
         @threads.each{|t| t.join}
     end
 
+    private
     def do_it
         begin
             callback = @q.pop
